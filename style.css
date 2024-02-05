@@ -314,13 +314,18 @@ main {
 }
 
 .survol-element a {
-  background-color: rgba(255, 255, 255, 0.438);
+  background-color: rgba(255, 255, 255, 0.2);
   padding: 10px 20px;
   color: white;
   text-decoration: none;
   border-radius: 5px;
   display: inline-block;
   position: relative;
+  transition: var(--trans);
+}
+
+.survol-element a:hover {
+  background-color: rgba(255, 255, 255, 0.4);
 }
 
 .survol-element a::after {
@@ -438,6 +443,49 @@ main {
   height: 100%;
   object-fit: cover;
   border-radius: 5px;
+}
+
+.blog-survol {
+  position: relative;
+}
+
+.blog-survol-element {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  width: 0%;
+  height: 0%;
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: var(--trans);
+}
+
+.blog-survol:hover .blog-survol-element {
+  top: 2.5%;
+  left: 2.5%;
+  width: 95%;
+  height: 95%;
+  opacity: 1;
+}
+
+.blog-survol-element a {
+  /* border: 1px solid red; */
+  text-decoration: none;
+  color: black;
+  font-size: 40px;
+  display: block;
+  text-align: right;
+}
+
+.blog-survol-element a + div p:last-child {
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 10px;
 }
 
 #contact {
