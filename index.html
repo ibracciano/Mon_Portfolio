@@ -160,6 +160,8 @@
               </div>
             </div>
           </div>
+
+          <a href="#home">Load More...</a>
         </div>
       </section>
 
@@ -278,7 +280,7 @@
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3972.5390488466323!2d-3.896326826679583!3d5.334339435842304!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfc1f37efe986f8f%3A0x706b3c10884a4685!2sGbagba%20ext.%20Boulangerie-p%C3%A2tisserie-glacier!5e0!3m2!1sfr!2sci!4v1707141766739!5m2!1sfr!2sci"
                 width="600"
-                height="450"
+                height="600"
                 style="border: 0"
                 allowfullscreen=""
                 loading="lazy"
@@ -294,25 +296,19 @@
               </p>
 
               <form action="">
-                <input
-                  type="text"
-                  name="name"
-                  id="name"
-                  placeholder="Enter Your Name"
-                />
-                <input
-                  type="email"
-                  name="email"
-                  id="email"
-                  placeholder="Enter Your Email"
-                />
-                <textarea
-                  name="subject"
-                  id="subject"
-                  cols="30"
-                  rows="8"
-                  placeholder="Enter Your Subject"
-                ></textarea>
+                <div>
+                  <label for="name">Enter Your Name</label>
+                  <input type="text" name="name" id="name" />
+                </div>
+                <div>
+                  <label for="email">Enter Your Email</label>
+                  <input type="email" name="email" id="email" />
+                </div>
+                <div>
+                  <label for="subject">Enter Your Subject</label>
+                  <input type="text" name="subject" id="subject" />
+                </div>
+                <input type="submit" value="Send Message" />
               </form>
             </div>
           </div>
